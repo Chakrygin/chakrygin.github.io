@@ -3,6 +3,8 @@ encoding: UTF-8
 exclude:
   - index.bat
 
+excerpt_separator: <!--more-->
+
 defaults:
   - scope:
       path: ""

@@ -1,0 +1,10 @@
+{% for post in site.posts %}
+    <div>
+        <h2><a href="{{ post.id }}">{{ post.title }}</a></h2>
+        {% include blog-post-top.html post=post %}
+        {{ post.excerpt }}
+        {% include blog-post-bottom.html post=post %}
+        <p><a href="{{ post.id }}">Читать дальше &raquo;</a></p>
+    </div>
+    <hr />
+{% endfor %}
